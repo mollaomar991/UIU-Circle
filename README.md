@@ -57,47 +57,6 @@ The UIU Alumni Association Platform is a full-stack web application that bridges
 - ACID-compliant transactions
 - Referential integrity enforcement
 
-## 📊 Database Highlights
-
-- **Normalization:** Eliminates redundancy, ensures consistency
-- **Indexing:** Optimized for fast queries and joins
-- **Constraints:** Foreign keys, unique constraints, NOT NULL validations
-- **Security:** Prepared statements, password hashing (bcrypt)
-- **Scalability:** Designed to handle 10,000+ users
-
-## 🚀 Installation
-
-1. **Setup Database**
-```bash
-mysql -u root -p
-CREATE DATABASE alumni_db;
-USE alumni_db;
-SOURCE database/schema.sql;
-```
-
-2. **Run Migrations**
-```bash
-php database/create_event_participants_table.php
-php database/create_mentorship_tables.php
-php database/create_donation_tables.php
-php database/create_messages_table.php
-php database/create_gallery_table.php
-```
-
-3. **Configure**
-Edit `includes/config.php`:
-```php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'alumni_db');
-define('SITE_URL', 'http://localhost/AlumniAccociation');
-```
-
-4. **Access**
-- User Portal: `http://localhost/AlumniAccociation`
-- Admin Panel: `http://localhost/AlumniAccociation/admin`
-- Default Admin: `username: admin`, `password: password`
 
 ## 👥 User Roles
 
@@ -124,19 +83,6 @@ define('SITE_URL', 'http://localhost/AlumniAccociation');
 - Manage fundraising campaigns
 - Platform analytics
 
-## 📁 Project Structure
-
-```
-AlumniAccociation/
-├── admin/              # Admin panel
-├── api/                # Payment gateway APIs
-├── auth/               # Authentication
-├── database/           # Schema & migrations
-├── includes/           # Core PHP files
-├── user/               # User-facing pages
-├── uploads/            # User uploads
-└── assets/             # CSS, JS, images
-```
 
 ## 🔐 Security Features
 
@@ -156,12 +102,6 @@ AlumniAccociation/
 - Efficient pagination
 - Transaction support for data integrity
 
-## 📖 Documentation
-
-- **[Complete Documentation](PROJECT_DOCUMENTATION.md)** - Full technical documentation
-- **[Database Schema Presentation](DATABASE_PRESENTATION.md)** - 31-slide technical overview
-- **[User Workflows Presentation](USER_WORKFLOWS_PRESENTATION.md)** - 31-slide practical guide
-
 ## 🎓 Learning Outcomes
 
 This project demonstrates:
@@ -177,19 +117,8 @@ This project demonstrates:
 
 ## ‍💻 Author
 
-**[Your Name]**
-- Student ID: [Your ID]
+**Molla Omar**
+- Student ID: 0112310485
 - Course: Database Management Systems Lab
 - University: United International University
-- Semester: [Your Semester]
-
-## 🙏 Acknowledgments
-
-- UIU Faculty for guidance
-- Course instructor for project requirements
-- SSLCommerz for payment gateway sandbox
-- Bootstrap/MDB for UI components
-
----
-
-**📧 Contact:** [your-email@example.com]
+- trimester:9th
